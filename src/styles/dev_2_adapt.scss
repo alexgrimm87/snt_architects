@@ -1,0 +1,484 @@
+@media screen and (max-width:1600px) {
+  .headline {
+    padding: 235px 0 58px;
+    .title {
+      max-width: 550px;
+      padding-bottom: 114px;
+      h1, h2, h3 {
+        font-size: 40px;
+        line-height: 56px;
+      }
+    }
+    .main-desc .desc {
+      font-size: 14px;
+      padding-right: 28px;
+      &:not(:last-child) {
+        padding-right: 25px;
+        margin-right: 61px;
+      }
+      h4, h5, h6 {
+        font-size: 24px;
+        padding-bottom: 23px;
+      }
+    }
+  }
+
+  .accounting {
+    .acc-form {
+      .accounting-form {
+        .form-col-full .form-row .button {
+          min-width: 100%;
+          margin: 0 auto;
+          padding: 23px 33px;
+        }
+        .desc {
+          h1, h2, h3 {
+            font-size: 36px;
+            padding-bottom: 7px;
+          }
+        }
+        .form {
+          .form-info {
+            input {
+              padding: 17px 23px;
+              margin-bottom: 34px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1336px) {
+  .mbox {
+    max-width: 905px;
+  }
+
+  .header .header-content {
+    justify-content: flex-end;
+    padding: 0;
+    .logo {
+      margin-left: 0;
+      margin-right: auto;
+    }
+    .header-desc {
+      position: static;
+      padding: 16px 27px 10px 27px;
+    }
+    .menu-wrap {
+      width: 79px;
+      margin: 0;
+      .burger {
+        display: flex;
+        margin-right: 0;
+        margin-left: auto;
+      }
+      .adapt-wrap {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #000;
+        height: 100vh;
+        padding: 80px 15px 20px;
+        overflow-y: scroll;
+      }
+      .menu {
+        width: 100%;
+        flex-wrap: wrap;
+        li {
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          text-align: center;
+          padding-bottom: 20px;
+        }
+      }
+      .language {
+        width: 65px;
+        margin: 0 auto;
+        padding: 0;
+        li {
+          padding-bottom: 10px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  .accounting {
+    .main-acc {
+      .accounting-wrap {
+        flex-wrap: wrap;
+        padding: 35px 0 37px;
+        .desc {
+          width: 100%;
+          text-align: center;
+          padding-bottom: 39px;
+          h1, h2, h3 {
+            font-size: 36px;
+            padding-bottom: 7px;
+          }
+        }
+        .form {
+          width: 100%;
+          flex-wrap: wrap;
+          max-width: 435px;
+          justify-content: center;
+          margin: 0 auto;
+          padding-top: 0;
+          .form-info {
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            padding-bottom: 24px;
+            .err-text {
+              top: 85%;
+              text-align: center;
+            }
+            input {
+              padding: 17px 23px;
+              margin-bottom: 34px;
+            }
+          }
+          .button {
+            padding: 17px 10px;
+            font-size: 18px;
+            min-width: 240px;
+          }
+        }
+      }
+    }
+    .acc-form {
+      .accounting-form {
+        flex-wrap: wrap;
+        .form-col-full {
+          padding-top: 0;
+          flex-wrap: wrap;
+          &:before {
+            display: none;
+          }
+          .form-row {
+            width: 32%;
+            &:last-child {
+              width: 100%;
+              padding-top: 20px;
+            }
+            .button {
+              margin: 0 auto;
+              font-size: 18px;
+              padding: 18px 10px;
+              min-width: 240px;
+            }
+          }
+        }
+        .form-col {
+          width: 50%;
+          padding-bottom: 15px;
+          &:first-child {
+            padding-top: 12px;
+          }
+          &:nth-child(4) {
+            width: 100%;
+            .form-row {
+              padding-bottom: 33px;
+            }
+          }
+          .form-row {
+            &.radios {
+              padding-top: 19px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .headline {
+    padding: 155px 0 30px;
+    .title {
+      max-width: 550px;
+      padding-bottom: 97px;
+      h1, h2, h3 {
+        font-size: 30px;
+        line-height: 42px;
+      }
+    }
+
+    .main-desc {
+      .desc {
+        font-size: 14px;
+        padding-right: 28px;
+        h4, h5, h6 {
+          font-size: 24px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .accounting {
+    .main-acc {
+      .accounting-wrap {
+        padding: 26px 0 37px;
+        .desc {
+          font-size: 16px;
+          padding-bottom: 16px;
+          h1, h2, h3 {
+            font-size: 30px;
+            padding-bottom: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .header {
+    .header-content {
+      .logo {
+        width: 140px;
+      }
+      .header-desc {
+        font-size: 12px;
+        line-height: 24px;
+        padding: 5px 10px 4px 12px;
+        a {
+          font-size: 13px !important;
+        }
+        p {
+          padding-bottom: 0;
+        }
+      }
+      .menu-wrap {
+        width: 52px;
+        .burger {
+          width: 27px;
+          span {
+            height: 4px;
+            &:before {
+              height: 4px;
+              top: -8px;
+            }
+            &:after {
+              height: 4px;
+              bottom: -8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:960px) {
+  .mbox {
+    max-width: 450px;
+  }
+
+  .headline {
+    padding: 155px 0 30px;
+    .title {
+      max-width: 550px;
+      padding-bottom: 97px;
+      h1, h2, h3 {
+        font-size: 30px;
+        line-height: 42px;
+      }
+    }
+    .main-desc {
+      flex-wrap: wrap;
+      .desc {
+        font-size: 14px;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        &:not(:last-child) {
+          padding-right: 0px;
+          margin-right: 0px;
+          padding-bottom: 45px;
+        }
+        h4, h5, h6 {
+          font-size: 24px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  .accounting {
+    .main-acc {
+      .accounting-wrap {
+        padding: 26px 0 37px;
+        .desc {
+          font-size: 16px;
+          padding-bottom: 16px;
+          h1, h2, h3 {
+            font-size: 30px;
+            padding-bottom: 14px;
+          }
+        }
+      }
+    }
+    .acc-form {
+      .accounting-form {
+        flex-wrap: wrap;
+        padding: 8px 0 0;
+        .form-col-full {
+          .form-row {
+            width: 100%;
+            padding-bottom: 20px;
+          }
+        }
+        .form-col {
+          width: 100%;
+          &:first-child {
+            padding-top: 23px;
+          }
+          &:nth-child(4) {
+            .form-row {
+              padding-bottom: 0px;
+            }
+          }
+          .form-row {
+            &.radios {
+              padding-top: 19px;
+            }
+            .button {
+              margin: 0 auto;
+              font-size: 18px;
+              padding: 18px 10px;
+              min-width: 240px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .header {
+    .header-content {
+      padding: 15px 0 20px;
+      .logo {
+        width: 140px;
+      }
+      .header-desc {
+        display: none;
+      }
+      .menu-wrap {
+        width: 30px;
+        .burger {
+          width: 20px;
+          span {
+            height: 3px;
+            &:before {
+              height: 3px;
+              top: -6px;
+            }
+            &:after {
+              height: 3px;
+              bottom: -6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .headline {
+    padding: 90px 0 30px;
+    .title {
+      max-width: 100%;
+      padding-bottom: 40px;
+      h1, h2, h3 {
+        font-size: 23px;
+        line-height: 30px;
+      }
+    }
+    .main-desc {
+      flex-wrap: wrap;
+      .desc {
+        font-size: 13px;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        &:not(:last-child) {
+          padding-bottom: 0;
+        }
+        h4, h5, h6 {
+          font-size: 19px;
+          padding-bottom: 10px;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .accounting {
+    .main-acc {
+      .accounting-wrap {
+        padding: 20px 0 30px;
+        .desc {
+          font-size: 13px;
+          padding-bottom: 16px;
+          h1, h2, h3 {
+            font-size: 25px;
+            padding-bottom: 8px;
+          }
+        }
+        .form {
+          .form-info {
+            .el-radio {
+              &:nth-child(2) {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .acc-form {
+      .accounting-form {
+        flex-wrap: wrap;
+        padding: 8px 0 0;
+        .close_form {
+          right: -10px;
+        }
+        .form-col {
+          width: 100%;
+          &:first-child {
+            padding-top: 23px;
+          }
+          &:last-child {
+            .form-row {
+              padding-bottom: 26px;
+            }
+          }
+          .form-row {
+            &.city {
+              .el-input {
+                width: 215px;
+              }
+            }
+            &.radios {
+              padding-top: 19px;
+            }
+            .el-radio {
+              margin-right: 15px;
+              padding-bottom: 10px;
+            }
+            .button {
+              margin: 0 auto;
+              font-size: 18px;
+              padding: 18px 10px;
+              min-width: 240px;
+            }
+            span {
+              padding-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

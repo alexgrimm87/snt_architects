@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>S&T architects</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+    <link rel="stylesheet" href="styles/plagins.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+<div class="global-wrapper">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="mbox">
+        <div class="header-content">
+          <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+          <div class="header-desc">
+            <p>Киев <a href="tel:0800211356">0 800 211 356</a></p>
+            <p>Одесса<a href="tel:+380935268636">+38 093 526 86 36</a></p>
+            <p><a href="mailto:" style="font-weight: 600; margin-left: 0; font-size: 14px;">mail@sivak-trigubchak.com</a></p>
+          </div>
+          <div class="menu-wrap">
+            <a href="#" class="burger"><span></span></a>
+            <div class="adapt-wrap">
+              <ul class="menu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Строители</a></li>
+                <li><a href="javascript:void(0)" onclick="location.reload();">Магазин</a></li>
+              </ul>
+              <ul class="language">
+                <li>
+                  <a href="#" class="lang">ENG <span></span></a>
+                  <ul>
+                    <li><a href="#">ENG</a></li>
+                    <li><a href="#">RUS</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <div class="main">
+        <!-- add partials here -->
+        <div class="preload"></div>
+        <section class="headline">
+        	<div class="mbox">
+        		<div class="title"><h1>Создаем интерьеры, <br> в которых наслаждаются жизнью.</h1></div>
+        		<div class="main-desc">
+        			<div class="desc">
+        				<h4>Интерьеры</h4>
+        				<p>Создаем пространства, в которые с радостью возвращаются вечером и называют домом.</p>
+        			</div>
+        			<div class="desc">
+        				<h4>Архитектура</h4>
+        				<p>Мы спроектируем и построим ваш дом, выражающий ваше представление о комфортной жизни.</p>
+        			</div>
+        			<div class="desc">
+        				<h4>Бизнес-проекты</h4>
+        				<p>Поможем выбрать правильное помещение для вашего ресторана или офиса ещё до покупки. Ведем проект от идеи и до первого покупателя.</p>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <section class="accounting">
+          <div class="main-acc">
+            <div class="mbox">
+              <div class="accounting-wrap">
+                <div class="desc">
+                  <h3>Экспресс расчет</h3>
+                  <p>Узнайте предварительную стоимость работы в течении трех часов</p>
+                </div>
+                <div class="form">
+                  <div class="form-info">
+                    <input type="text" class="city" placeholder="Введите город">
+                    <div class="el-radio">
+                      <input type="radio" name="type" id="live" data-name="live_acc">
+                      <label for="live">Жилое</label>
+                    </div>
+                    <div class="el-radio">
+                      <input type="radio" name="type" id="commerce" data-name="commercial_acc">
+                      <label for="commerce">Коммерческое</label>
+                    </div>
+                  </div>
+                  <a href="#" class="button">Заполнить форму</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="acc-form live_acc">
+            <div class="mbox">
+            	<form action="ajax.php" class="accounting-form">
+                    <a href="#" class="close_form"></a>
+            		<div class="form-col">
+            			<input type="hidden" name="house_type" value="live" class="hidden_input">
+            			<div class="form-row">
+            				<span>Количество комнат</span>
+            				<select name="rooms" class="el-select">
+            					<option value="1">1</option>
+            					<option value="2">2</option>
+            					<option value="3">3</option>
+            					<option value="4">4</option>
+            					<option value="5">5</option>
+            				</select>
+            			</div>
+            			<div class="form-row">
+            				<div class="el-radio">
+        		              <label for="house">Дом</label>
+        		              <input type="radio" name="house-flat" id="house" checked="checked">
+        		            </div>
+        		            <div class="el-radio">
+        		              <label for="flat">Квартира</label>
+        		              <input type="radio" name="house-flat" id="flat">
+        		            </div>
+            			</div>
+            			<div class="form-row square">
+            				<span>Площадь m<sup>2</sup></span>
+            				<input type="number" name="square" class="el-input" min="1" max="9999" required>   				
+            			</div>
+            			<div class="form-row city">
+            				<span>Город</span>
+            				<input type="text" name="city" class="el-input" required>
+            			</div>
+            		</div>
+            		<div class="form-col">
+            			<div class="form-row time">
+            				<span>Сроки желаемой сдачи</span>
+            				<input type="text" name="city" class="el-input">
+            			</div>
+            			<div class="form-row">
+            				<span>Количество членов семьи</span>
+            				<select name="people" class="el-select">
+            					<option value="1">1</option>
+            					<option value="2">2</option>
+            					<option value="3">3</option>
+            					<option value="4">4</option>
+            					<option value="5">5</option>
+            				</select>
+            			</div>
+            			<div class="form-row style">
+            				<span>Стиль</span>
+            				<select name="style" class="el-select">
+            					<option value="loft">Лофт</option>
+            					<option value="loft2">Лофт2</option>
+            					<option value="loft3">Лофт3</option>
+            					<option value="loft4">Лофт4</option>
+            					<option value="loft5">Лофт5</option>
+            				</select>
+            			</div>
+            		</div>
+            		<div class="form-col">
+        	    		<div class="form-row">
+        	    			<p>Пожелания:</p>
+        	    			<textarea name="wishes" class="el-textarea" cols="30" rows="4" placeholder="Введите текст пожелания"></textarea>
+            			</div>
+                    </div>
+        			<div class="form-col-full">
+                        <div class="form-row">
+                            <input type="text" name="name" class="el-input" placeholder="Имя" required />
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="tel" class="el-input tel-mask" placeholder="Телефон" required />
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" class="el-input" placeholder="E-mail" required />
+                        </div>
+                        <div class="form-row">
+        				    <button class="button" type="submit">Отправить</button>
+                        </div>
+        			</div>
+            	</form>
+            </div>
+          </div>
+          <div class="acc-form commercial_acc">
+            <div class="mbox">
+            	<form action="ajax.php" class="accounting-form commercial">
+                    <a href="#" class="close_form"></a>
+            		<div class="form-col">
+            			<input type="hidden" name="house_type" value="commercial" class="hidden_input">
+            			<div class="form-row radios">
+            				<div class="el-radio">
+        		              <label for="office">Офис</label>
+        		              <input type="radio" name="appartment_type" id="office" checked="checked">
+        		            </div>
+        		            <div class="el-radio">
+        		              <label for="restaurant">Ресторан</label>
+        		              <input type="radio" name="appartment_type" id="restaurant">
+        		            </div>
+        		            <div class="el-radio">
+        		              <label for="cafe">Кафе</label>
+        		              <input type="radio" name="appartment_type" id="cafe">
+        		            </div>
+        		            <div class="el-radio">
+        		              <label for="shop">Магазин</label>
+        		              <input type="radio" name="appartment_type" id="shop">
+        		            </div>
+        		            <div class="el-radio">
+        		              <label for="sport">Спорт</label>
+        		              <input type="radio" name="appartment_type" id="sport">
+        		            </div>
+        		            <div class="el-radio">
+        		              <label for="other">Другое</label>
+        		              <input type="radio" name="appartment_type" id="other">
+        		            </div>
+            			</div>
+            			<div class="form-row square">
+            				<span>Площадь m<sup>2</sup></span>
+            				<input type="number" name="square" class="el-input" min="1" max="9999" required>   				
+            			</div>
+            			<div class="form-row city">
+            				<span>Город</span>
+            				<input type="text" name="city" class="el-input" required>
+            			</div>
+            		</div>
+            		<div class="form-col">
+            			<div class="form-row time">
+            				<span>Сроки желаемой сдачи</span>
+            				<input type="text" name="city" class="el-input">
+            			</div>
+            			<div class="form-row style">
+            				<span>Стиль</span>
+            				<select name="style" class="el-select">
+            					<option value="loft">Современный</option>
+            					<option value="loft2">Лофт2</option>
+            					<option value="loft3">Лофт3</option>
+            					<option value="loft4">Лофт4</option>
+            					<option value="loft5">Лофт5</option>
+            				</select>
+            			</div>
+            		</div>
+            		<div class="form-col">
+        	    		<div class="form-row">
+        	    			<p>Пожелания:</p>
+        	    			<textarea name="wishes" class="el-textarea" cols="30" rows="4" placeholder="Введите текст пожелания"></textarea>
+            			</div>
+            		</div>
+                    <div class="form-col-full">
+                        <div class="form-row">
+                            <input type="text" name="name" class="el-input" placeholder="Имя" required />
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="tel" class="el-input tel-mask" placeholder="Телефон" required />
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" class="el-input" placeholder="E-mail" required />
+                        </div>
+                        <div class="form-row">
+                            <button class="button" type="submit">Отправить</button>
+                        </div>
+                    </div>
+            	</form>
+            </div>
+          </div>
+        </section>
+        <section class="gallery">
+          <ul class="gallery-list mbox2">
+            <li>
+              <a href="#">
+                <img src="images/gallery01.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Башня синергии</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Конкурсное предложение реконструкции бывшего дымохода</p>
+                  </div>
+                  <div class="address">
+                    <p>Киев, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery02.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Альтаир</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Квартира для молодоженов</p>
+                  </div>
+                  <div class="address">
+                    <p>Альтаир, Одесса</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery03.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Дом на берегу озера</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Проект дома-мастерской</p>
+                  </div>
+                  <div class="address">
+                    <p>Закарпатье, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery04.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Дом в Закарпатье</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Проект летней резиденции двух семей</p>
+                  </div>
+                  <div class="address">
+                    <p>Закарпатье, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery05.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Черный интерьер</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Эта квартира не для мужчины холостяка, а дом для молодой женщины и ее дочери.</p>
+                  </div>
+                  <div class="address">
+                    <p>Киев, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery06.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Квартира для летнего отдыха</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Дизайн квартиры для летнего отдыха</p>
+                  </div>
+                  <div class="address">
+                    <p>Одесса, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery07.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Квартира с библиотекой</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Дизайн квартиры с большой библиотекой</p>
+                  </div>
+                  <div class="address">
+                    <p>Киев, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery08.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Черный интерьер</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Эта квартира не для мужчины холостяка, а дом для молодой женщины и ее дочери.</p>
+                  </div>
+                  <div class="address">
+                    <p>Киев, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+                <li>
+              <a href="#">
+                <img src="images/gallery01.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Башня синергии</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Конкурсное предложение реконструкции бывшего дымохода</p>
+                  </div>
+                  <div class="address">
+                    <p>Киев, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery02.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Альтаир</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Квартира для молодоженов</p>
+                  </div>
+                  <div class="address">
+                    <p>Альтаир, Одесса</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery03.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Дом на берегу озера</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Проект дома-мастерской</p>
+                  </div>
+                  <div class="address">
+                    <p>Закарпатье, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery04.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Дом в Закарпатье</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Проект летней резиденции двух семей</p>
+                  </div>
+                  <div class="address">
+                    <p>Закарпатье, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery05.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Черный интерьер</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Эта квартира не для мужчины холостяка, а дом для молодой женщины и ее дочери.</p>
+                  </div>
+                  <div class="address">
+                    <p>Киев, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery06.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Квартира для летнего отдыха</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Дизайн квартиры для летнего отдыха</p>
+                  </div>
+                  <div class="address">
+                    <p>Одесса, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gallery07.jpg" alt="">
+                <div class="info">
+                  <div class="title">
+                    <h6>Квартира с библиотекой</h6>
+                  </div>
+                  <div class="sub-title">
+                    <p>Дизайн квартиры с большой библиотекой</p>
+                  </div>
+                  <div class="address">
+                    <p>Киев, Украина</p>
+                  </div>
+                  <div class="date">
+                    <p>2017</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="show-more-wrap">
+              <a href="#" class="show-more" data-action="load_more_items2" data-page="2" data-per-page="15">
+                <div class="icon">
+                  <img src="images/ajax-icon.png" alt="">
+                </div>
+                <div class="text">
+                  <p>Показать еще</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="hashtags">
+            <li>
+              <a href="#">#Архитектура</a>
+            </li>
+            <li>
+              <a href="#">#Дизайн интерьеров</a>
+            </li>
+            <li>
+              <a href="#">#Коммерческие объекты</a>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+        	<div class="mbox">
+        		<div class="about-inner">
+        			<h3>Об услугах дизайна и миссии студии.</h3>
+        			<p>Мы команда архитекторов, которая обожает свою работу и делимся своей любовью к дизайну и архитектуре с клиентами через проекты. Каждый дизайн уникален, каждый проект дизайна интерьера или архитектуры разрабатывается под своего клиента и по его поставленным задачам. Дизайн наших интерьеров получает награды и попадает на обложки журналов. Мы создаем не просто практичные интерьеры, но и обладающие художественной ценностью. Такие пространства остаются в цене сквозь время и дарят потомкам.</p>
+        			<br>
+        			<h3>Дизайн вне границ и политики.</h3>
+        			<p>Вы можете заказать дизайн интерьера в Киеве, Одессе или для других городов Украины или стран. Мы работаем независимо от границ, а благодаря универсальности строительных материалов, проект в любой точке земного шара будет реализован согласно идеи.</p>
+        			<br>
+        			<p>Работаем с любыми площадями и видами задач. Будь это небольшая квартира или комната со смелыми идеями или частный дом на тысячу квадратных метров, мы одинаково профессионально и ответственно подходим к любому заказу. Дизайн вне площади и бюджета. Главное — это ваше желание создать качественный интерьер.</p> 
+        			<br>
+        			<h3>Коммерческие и рабочие  пространства.</h3>
+        			Создаем не только жилое, но и рабочее пространство. Современный офис это уже не просто огромный зал, где люди сидят в серых коробках. Примеры зарубежных больших компаний показали, насколько работник становится  продуктивнее, когда в офисе его компании правильная планировка, грамотны расставлены рабочие места, поставлен свет.</p> 
+        			<br>
+        			<h3>Сопровождение объектов</h3>
+        			<p>Услуги дизайна это долго и трудоемко. Средний проект длится 2 месяца, а реализация 6. Поэтому очень важно, чтоб между нами и клиентом было одинаковое видение продукта и понимание процессов. Начиная с планировки, мы встречаемся, заполняем бриф и опрашиваем все ваши пожелания и задачи. Правильно поставленная задача и четко обозначенный бюджет это главные принципы успешной работы над дизайном интерьера.</p>  
+        			<br>
+        			<p>Наши клиенты это люди, у которых часто нет свободного времени, поэтому комплексное ведение проекта позволяет вам не отвлекаться на ремонт, а заниматься своими любыми делами или работой. 
+        			Мы можем предоставить своих строителей, которые проверены уже на десятке строек. Полностью комплектуем ваш интерьер, выписывая все артикулы и материалы. Еще до начала работ будут видны все сметы и необходимые вложения.  Просчет смет до начала строительства позволяет правильно распределить бюджет во времени и не останавливать стройку или ремонт. Просчитываем не только главные позиции, но и декор с мелочами — 
+        			заканчиваем свою работу, когда уже повесим номерок на входную дверь вашего будущего дома.</p>
+        			<br>
+        			<p>Ваш дом должен вас вдохновлять, создавать уют и место отдыха. Любой дизайн интерьера это большая работа с несколькими сотнями позиций для покупок и бездонное количество вопросов и встреч. Как правило стоимость дизайна интерьера меньше пяти процентов от бюджета, но именно эти несколько процентов позволят сделать видимым и осознанным использование всей суммы. Ведь каждый из нас видел, когда сотни тысяч долларов потрачены впустую.  Заказывая дизайн интерьера у нас, вы получаете продукт и его реализацию в рамках бюджета-сроков и по вашим пожеланиям.
+        			<br>
+        			<p>Наша студия дизайна интерьера готова к любым новым и смелым задачам.</p>
+        			<br>
+        			<h3>Архитектура</h3>
+        			<p>На просторах Украины все больше появляется современной архитектуры, люди перестают строить дворцы и хотят жить в, прежде всего, удобном и стильном пространстве. Дизайн интерьера и архитектура становится благодаря этому еще более утонченней, изысканней, когда ей не нужно кричать о себе, а лишь стильно  служить целям на фоне жизни хозяина. 
+        			Услуга дизайна интерьера на рынке популярней, чем создание и проект частного дома, но благодаря этому, если вы закажите частный современный дом сегодня, то через десяток лет ваш дом может попасть в новую историю архитектуры Украины.</p>
+        		</div>
+        		<div class="button-wrap">
+        			<a href="#" class="button show-text">Читать дальше</a>
+        		</div>
+        	</div>
+        </section>
+    </div>
+    <!-- /MAIN -->
+
+    <div class="hidden-block">
+    
+        <div id="call_success" class="call-success">
+             <div class="call-success-wrap">
+                 <div class="call-success-title">Спасибо за заявку!</div>
+                 <div class="call-success-subtitle">Мы свяжемся с Вами в ближайшее время</div>
+             </div>
+        </div>
+    
+        <div id="call-popup">
+            <form action="ajax.php" class="contact-form">
+                <div class="contact-form-title">
+                    <!-- Title -->
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item">
+                        <button type="submit" class="contact-submit">
+                            <span><!-- Отправить заявку  --></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer_placeholder"></div>
+    <footer class="footer">
+      <div class="mbox">
+        <div class="title">
+          <h2>Стоимость услуг</h2>
+        </div>
+        <div class="sub-title">
+          <p>Дизайн нельзя измерить квадратными метрами, часами или килограммами. У нас нет фиксированной цены и каждый проект рассчитывается индивидуально.</p>
+        </div>
+        <div class="text">
+        	<p>Деньги и время, сэкономленные с нами, окупают стоимость наших услуг.</p>
+        </div>
+        <form action="ajax-programer.php" method="post" name="footer-form" class="footer-form">
+          <div class="form-inner">
+            <div class="form-field">
+              <input type="text" name="name" placeholder="Имя" required />
+            </div>
+            <div class="form-field">
+              <input type="text" name="tel" class="tel-mask" placeholder="Телефон" required />
+            </div>
+            <div class="form-field">
+              <input type="email" name="email" placeholder="E-mail" required />
+            </div>
+          </div>
+          <button type="submit" class="button">Получить расчет</button>
+        </form>
+        <ul class="social">
+          <li>
+            <a href="#">
+              <img src="images/facebook-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/instagram-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/behance-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/viber-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/telegram-icon.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <ul class="contacts">
+          <li>
+            <a href="tel:0800211356">Киев  0 800 211 356</a>
+          </li>
+          <li>
+            <a href="tel:380935268636">Одесса  +38 093 526 86 36 </a>
+          </li>
+          <li>
+            <a href="mailto:mail@sivak-trigubchak.com">mail@sivak-trigubchak.com</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+</div>
+
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="scripts/validate_script.js"></script>
+
+<script src="scripts/plagins.js"></script>
+
+<script src="scripts/main.js"></script>
+
+<!-- /SCRIPTS -->
+
+</body>
+</html>

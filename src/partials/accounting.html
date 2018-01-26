@@ -1,0 +1,190 @@
+<section class="accounting">
+  <div class="main-acc">
+    <div class="mbox">
+      <div class="accounting-wrap">
+        <div class="desc">
+          <h3>Экспресс расчет</h3>
+          <p>Узнайте предварительную стоимость работы в течении трех часов</p>
+        </div>
+        <div class="form">
+          <div class="form-info">
+            <input type="text" class="city" placeholder="Введите город">
+            <div class="el-radio">
+              <input type="radio" name="type" id="live" data-name="live_acc">
+              <label for="live">Жилое</label>
+            </div>
+            <div class="el-radio">
+              <input type="radio" name="type" id="commerce" data-name="commercial_acc">
+              <label for="commerce">Коммерческое</label>
+            </div>
+          </div>
+          <a href="#" class="button">Заполнить форму</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="acc-form live_acc">
+    <div class="mbox">
+    	<form action="ajax.php" class="accounting-form">
+            <a href="#" class="close_form"></a>
+    		<div class="form-col">
+    			<input type="hidden" name="house_type" value="live" class="hidden_input">
+    			<div class="form-row">
+    				<span>Количество комнат</span>
+    				<select name="rooms" class="el-select">
+    					<option value="1">1</option>
+    					<option value="2">2</option>
+    					<option value="3">3</option>
+    					<option value="4">4</option>
+    					<option value="5">5</option>
+    				</select>
+    			</div>
+    			<div class="form-row">
+    				<div class="el-radio">
+		              <label for="house">Дом</label>
+		              <input type="radio" name="house-flat" id="house" checked="checked">
+		            </div>
+		            <div class="el-radio">
+		              <label for="flat">Квартира</label>
+		              <input type="radio" name="house-flat" id="flat">
+		            </div>
+    			</div>
+    			<div class="form-row square">
+    				<span>Площадь m<sup>2</sup></span>
+    				<input type="number" name="square" class="el-input" min="1" max="9999" required>   				
+    			</div>
+    			<div class="form-row city">
+    				<span>Город</span>
+    				<input type="text" name="city" class="el-input" required>
+    			</div>
+    		</div>
+    		<div class="form-col">
+    			<div class="form-row time">
+    				<span>Сроки желаемой сдачи</span>
+    				<input type="text" name="city" class="el-input">
+    			</div>
+    			<div class="form-row">
+    				<span>Количество членов семьи</span>
+    				<select name="people" class="el-select">
+    					<option value="1">1</option>
+    					<option value="2">2</option>
+    					<option value="3">3</option>
+    					<option value="4">4</option>
+    					<option value="5">5</option>
+    				</select>
+    			</div>
+    			<div class="form-row style">
+    				<span>Стиль</span>
+    				<select name="style" class="el-select">
+    					<option value="loft">Лофт</option>
+    					<option value="loft2">Лофт2</option>
+    					<option value="loft3">Лофт3</option>
+    					<option value="loft4">Лофт4</option>
+    					<option value="loft5">Лофт5</option>
+    				</select>
+    			</div>
+    		</div>
+    		<div class="form-col">
+	    		<div class="form-row">
+	    			<p>Пожелания:</p>
+	    			<textarea name="wishes" class="el-textarea" cols="30" rows="4" placeholder="Введите текст пожелания"></textarea>
+    			</div>
+            </div>
+			<div class="form-col-full">
+                <div class="form-row">
+                    <input type="text" name="name" class="el-input" placeholder="Имя" required />
+                </div>
+                <div class="form-row">
+                    <input type="text" name="tel" class="el-input tel-mask" placeholder="Телефон" required />
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" class="el-input" placeholder="E-mail" required />
+                </div>
+                <div class="form-row">
+				    <button class="button" type="submit">Отправить</button>
+                </div>
+			</div>
+    	</form>
+    </div>
+  </div>
+  <div class="acc-form commercial_acc">
+    <div class="mbox">
+    	<form action="ajax.php" class="accounting-form commercial">
+            <a href="#" class="close_form"></a>
+    		<div class="form-col">
+    			<input type="hidden" name="house_type" value="commercial" class="hidden_input">
+    			<div class="form-row radios">
+    				<div class="el-radio">
+		              <label for="office">Офис</label>
+		              <input type="radio" name="appartment_type" id="office" checked="checked">
+		            </div>
+		            <div class="el-radio">
+		              <label for="restaurant">Ресторан</label>
+		              <input type="radio" name="appartment_type" id="restaurant">
+		            </div>
+		            <div class="el-radio">
+		              <label for="cafe">Кафе</label>
+		              <input type="radio" name="appartment_type" id="cafe">
+		            </div>
+		            <div class="el-radio">
+		              <label for="shop">Магазин</label>
+		              <input type="radio" name="appartment_type" id="shop">
+		            </div>
+		            <div class="el-radio">
+		              <label for="sport">Спорт</label>
+		              <input type="radio" name="appartment_type" id="sport">
+		            </div>
+		            <div class="el-radio">
+		              <label for="other">Другое</label>
+		              <input type="radio" name="appartment_type" id="other">
+		            </div>
+    			</div>
+    			<div class="form-row square">
+    				<span>Площадь m<sup>2</sup></span>
+    				<input type="number" name="square" class="el-input" min="1" max="9999" required>   				
+    			</div>
+    			<div class="form-row city">
+    				<span>Город</span>
+    				<input type="text" name="city" class="el-input" required>
+    			</div>
+    		</div>
+    		<div class="form-col">
+    			<div class="form-row time">
+    				<span>Сроки желаемой сдачи</span>
+    				<input type="text" name="city" class="el-input">
+    			</div>
+    			<div class="form-row style">
+    				<span>Стиль</span>
+    				<select name="style" class="el-select">
+    					<option value="loft">Современный</option>
+    					<option value="loft2">Лофт2</option>
+    					<option value="loft3">Лофт3</option>
+    					<option value="loft4">Лофт4</option>
+    					<option value="loft5">Лофт5</option>
+    				</select>
+    			</div>
+    		</div>
+    		<div class="form-col">
+	    		<div class="form-row">
+	    			<p>Пожелания:</p>
+	    			<textarea name="wishes" class="el-textarea" cols="30" rows="4" placeholder="Введите текст пожелания"></textarea>
+    			</div>
+    		</div>
+            <div class="form-col-full">
+                <div class="form-row">
+                    <input type="text" name="name" class="el-input" placeholder="Имя" required />
+                </div>
+                <div class="form-row">
+                    <input type="text" name="tel" class="el-input tel-mask" placeholder="Телефон" required />
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" class="el-input" placeholder="E-mail" required />
+                </div>
+                <div class="form-row">
+                    <button class="button" type="submit">Отправить</button>
+                </div>
+            </div>
+    	</form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,260 @@
+@media screen and (max-width: 1920px){
+
+}
+@media screen and (max-width: 1600px){
+  .title {
+    h1,h2,h3 {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+
+  .button {
+    padding: 18px 33px;
+    font-size: 18px;
+    min-width: 224px;
+  }
+
+  .about {
+    .button-wrap {
+       .button {
+         &:before {
+            top: 18px;
+            border-top: solid 3px currentColor;
+            border-right: solid 3px currentColor;
+         }
+       }
+    }
+  }
+
+  .gallery {
+    .gallery-list {
+      li {
+        a {
+          &.show-more {
+            font-size: 23px;
+          }
+          .info {
+            .title {
+              h4,h5,h6 {
+                font-size: 22px;
+                line-height: 28px;
+              }
+            }
+            .sub-title {
+              font-size: 15px;
+              line-height: 18px;
+            }
+            .address, .date {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hashtags {
+    li {
+      a {
+        padding: 17px 32px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 60px;
+    .sub-title {
+      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .text {
+      margin-bottom: 45px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .footer-form {
+      margin-bottom: 90px;
+      .form-inner {
+        margin-bottom: 32px;
+        .form-field {
+          max-width: 290px;
+          input {
+            font-size: 14px;
+            padding: 18px 5px 18px 21px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1366px){
+
+}
+@media screen and (max-width: 1336px){
+  .gallery {
+    .gallery-list {
+      max-width: 960px;
+      width: 100%;
+      li {
+        width: calc(100%/2);
+        a {
+          &.show-more {
+            font-size: 30px;
+          }
+          .info {
+            .title {
+              h4,h5,h6 {
+                font-size: 30px;
+                line-height: 38px;
+              }
+            }
+            .sub-title {
+              font-size: 18px;
+              line-height: 24px;
+            }
+            .address, .date {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer-form {
+      .form-inner {
+        flex-direction: column;
+        align-items: center;
+        .form-field {
+          margin: 0 0 33px 0;
+          max-width: 500px;
+          &:last-child {
+            margin-bottom: 0
+          }
+          input {
+            padding: 24px 5px 24px 21px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px){
+
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 992px){
+
+}
+@media screen and (max-width: 960px){
+  .title {
+    h1,h2,h3 {
+      font-size: 30px;
+    }
+  }
+
+  .gallery {
+    .gallery-list {
+      max-width: 482px;
+      li {
+        width: 100%;
+        &.show-more-wrap {
+          height: 105px;
+          a {
+            flex-direction: row;
+            font-size: 24px;
+            .icon {
+              margin: 0 30px 0 0;
+              width: 39px;
+              height: 38px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .hashtags {
+    padding: 30px 0;
+    max-width: 482px;
+    margin: 0 auto;
+    li {
+      a {
+        padding: 8px 32px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .about {
+    .about-inner {
+      font-size: 13px;
+      h1,h2,h3,h4,h5,h6 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .footer {
+    .title {
+      margin-bottom: 20px;
+    }
+    .sub-title {
+      margin-bottom: 33px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .text {
+      margin-bottom: 18px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .contacts {
+      flex-direction: column;
+      li {
+        margin: 0 0 7px 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 666px){
+
+}
+@media screen and (max-width: 479px){
+  .gallery {
+    .gallery-list {
+      li {
+        a {
+          .info {
+            .title {
+              h4,h5,h6 {
+                font-size: 22px;
+                line-height: 28px;
+              }
+            }
+            .sub-title {
+              font-size: 15px;
+              line-height: 18px;
+            }
+            .address, .date {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px){
+
+}
